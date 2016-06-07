@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/main_bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="173dp"
+        android:id="@+id/relativeLayout5"
+        android:layout_above="@+id/relativeLayout6"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="14dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/depart"
+                    android:background="@drawable/bienvenu_point_depart"
+                    android:hint="Point de départ ..."
+                    android:textColorHint="#ffffff"
+                    android:gravity="left|center_vertical|right"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="-2dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/checkBox"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Ma position actuelle"
+                    android:id="@+id/textView3"
+                    android:textSize="12dp"
+                    android:layout_marginTop="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/arrivee"
+                    android:background="@drawable/bienvenu_point_arrivee"
+                    android:hint="Point d&apos;arrivée ..."
+                    android:textColorHint="#ffffff"
+                    android:gravity="left|center_vertical|right"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:clickable="false"
+                    android:layout_marginTop="-2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/reset"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/main_reset"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="55dp" />
+
+                    <Button
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/btn_ok"
+                        android:background="@drawable/main_itineraire"
+                        android:layout_marginRight="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/relativeLayout6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btn_info"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/info"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="6dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"></RelativeLayout>
+
+</RelativeLayout>
